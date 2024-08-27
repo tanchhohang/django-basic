@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Register
+    Login
 {% endblock  %}
 
 {% block content %}
     <section>
-        <h1>Register New User</h1>
-        <form class = "form-width-validation" action="/users/register/" method="post">
+        <h1>Login</h1>
+        <form class = "form-width-validation" action="/users/login/" method="post">
             {% csrf_token %}
             {{ form }}
             <button class= "form-submit">Submit</button>
